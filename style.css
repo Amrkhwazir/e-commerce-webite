@@ -1,0 +1,170 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+}
+
+/* navbar section */
+.navbarCont{
+    display: flex;
+    justify-content: space-around;
+    gap: 100px;
+    width: 100%;
+    height: 70px;
+/* border: 1px solid black; */
+padding-top: 10px;
+background-color: #e3e6f3;
+/* border: 1px solid gray; */
+box-shadow: 1px 1px 10px 1px rgb(181, 180, 180);
+z-index: 999;
+position: sticky;
+top: 0;
+left: 0;
+}
+.logo{
+    /* border: 1px solid red; */
+    width: 200px;
+    height: 50px;
+}
+.navList ul{
+    /* border: 1px solid red; */
+display: flex;
+width: 600px;
+height: 50px;
+justify-content: space-around;
+/* gap: 50px; */
+padding-top: 12px;
+}
+.navList ul li{
+    list-style-type: none;
+}
+.navList ul li a{
+    position: relative;
+    text-decoration: none;
+    color: #1a1a1a;
+    font-size: 18px;
+}
+.navList ul li a:hover,
+.navList ul li a.active{
+    color: #088178;
+}
+.navList ul li a::after{
+    content: '';
+    position: absolute;
+    width: 0px;
+    height: 2px;
+    background-color: #088178;
+    bottom: -3px;
+    left: 1px;
+    transition: 0.8s all ease;
+
+}
+.navList ul li a:hover::after{
+    width: 40px;
+}
+.navList ul i{
+    font-size: 18px;
+}
+
+/* main section */
+
+.mainCont{
+    width: 100%;
+    height: 90vh;
+    background-image: url(./img/hero4.png);
+    background-position: top 25% right 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    /* border: 1px solid black; */
+    /* margin-top: 5px; */
+    /* background-color: #e3e6f3; */
+}
+.mainCont h2{
+    font-size: 28px;
+    padding-left: 7px;
+}
+.mainCont h1{
+    font-size: 52px;
+    font-family: 700;
+    margin-bottom: 5px;
+    
+}
+.mainCont h1:nth-child(3){
+    color: #088178;
+}
+.mainCont p{
+    color: gray;
+    padding-left: 7px;
+    margin-bottom: 20px;
+}
+.mainCont button{
+    background-image: url(./img/button.png);
+    padding: 14px 80px 14px 65px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: transparent;
+    color: #088178;
+    border: 0;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+/* feature section */
+
+.featureCont{
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid black; */
+}
+.fe-card{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 50px 20px;
+}
+.fe-innerCardBox{
+    padding: 10px 7px 10px 6px;
+    background-color: white;
+    border: 1px solid gainsboro;
+    box-shadow: 1px 1px 8px 5px #e5e7f0;
+    width: 160px;
+    height: 170px;
+    text-align: center;
+    transition: 0.5s all ease;
+}
+.fe-innerCardBox:hover{
+    box-shadow: 1px 1px 8px 5px #d2d5e4;
+}
+.fe-innerCardBox h5{
+    margin: 6px 10px 6px 15px;
+    padding: 8px 8px 8px 8px;
+    color: #088178;
+    background-color: #fddde4;
+}
+.fe-innerCardBox:nth-child(2)  h5{
+    background-color: #cdebbc;
+}
+
+.fe-innerCardBox:nth-child(3)  h5{
+    background-color: #d1ef82;
+}
+
+.fe-innerCardBox:nth-child(4)  h5{
+    background-color: #cdd4f8;
+}
+
+.fe-innerCardBox:nth-child(5)  h5{
+    background-color: #f6dbf6;
+}
+
+.fe-innerCardBox:nth-child(6)  h5{
+    background-color: #fff2e5;
+}
